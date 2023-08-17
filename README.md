@@ -1,4 +1,4 @@
-# The Carpentries Workbench Template Markdown Lesson
+# Reproducible Research Workflows
 
 This lesson is a template lesson that uses [The Carpentries Workbench][workbench].
 
