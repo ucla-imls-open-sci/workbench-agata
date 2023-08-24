@@ -1,5 +1,8 @@
 # Reproducible Research Workflows
 
+* Agata Bochynska
+
+
 This lesson is a template lesson that uses [The Carpentries Workbench][workbench].
 
 ## Create a new repository from this template
