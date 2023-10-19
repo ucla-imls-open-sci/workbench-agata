@@ -14,7 +14,7 @@ carpentry: 'incubator'
 title: 'Reproducible Research Workflows'
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
-created: 
+created: 2023-08-16
 
 # Comma-separated list of keywords for the lesson
 keywords: 'reproducibility, research workflows, library, open research'
