@@ -2,11 +2,15 @@
 site: sandpaper::sandpaper_site
 ---
 
-::::::::::::::::: callout
+:::::: callout
 
-This lesson is under active development.
+### :construction: Under Construction :construction:
 
-:::::::::::::::::::::::::
+This documentation site is still being constructed---please be patient.
+
+::::::::::::::::::
+
+
 
 ## Learning Objectives
 
