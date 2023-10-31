@@ -2,14 +2,18 @@
 site: sandpaper::sandpaper_site
 ---
 
-:::::: callout
+Given that open science is at the core of libraries’ work and many librarians provide
+direct and increasingly hands-on support to both early career and senior researchers at
+their institutions, a good understanding of reproducibility and its place in the open science landscape is critical. Moreover, as funders, journals, and other stakeholders
+begin to implement new requirements for open and reproducible research, librarians
+need to know how not only openness but also reproducibility can be achieved in
+academic research. Librarians also need to be aware of how differently the
+implementation of reproducible research workflows can look in across different disciplines and research methodologies.
 
-### :construction: Under Construction :construction:
-
-This documentation site is still being constructed---please be patient.
-
-::::::::::::::::::
-
+Based on that, the current lesson proposal focuses on helping librarians understand the
+concept of reproducibility and learn about both theoretical and practical aspects of
+reproducible research workflows. It also aims to prompt further development of library
+support services in this area through harnessing existing expertise in academic libraries.
 
 
 ## Learning Objectives

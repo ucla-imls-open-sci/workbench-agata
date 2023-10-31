@@ -1,7 +1,7 @@
 ---
 title: 'What is Reproducible Research?'
 teaching: 10
-exercises: 2
+exercises: 1
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
@@ -40,26 +40,43 @@ Research results are **generalized** when results apply in other contexts or pop
 
 ::: challenge
 
-## Exercise
+## Based on what we went through, we can say that a study has been reproduced when:
 
-XX
+1. Researchers apply similar methods to the original study in a new study
+1. Researchers re-analyze data from the original study and observe the same results
+1. Researchers reuse data from the original study for a new purpose
+
 
 ::: solution
+
+2. Researchers re-analyze data from the original study and observe the same results
+
 :::
 
 :::
 
 ## Reproducibility: Some Examples
 
-::: challenge
+Let’s consider an example: a researcher is tossing a coin 100 times to check if the coin is fair. They register if they have observed heads or tails after each toss when the coin falls on the floor. Heads are registered as 0 and tails as 1. The sample size of this study is N = 100 (since they are tossing the coin 100 times). 
 
-## Exercise
+Hypothesis: The coin is fair (i.e. not biased)\
+Sample size: N = 100\
+Heads = 0\
+Tails = 1\
+Analysis method = Student t-test\
 
-XX
+After all data is collected (i.e. the researcher is done with the tossing) they start data analysis. They run a simple statistical test in the SPSS program - a Student t-test - to compare the number of observed tails outcomes against the chance level (which is 0.5 since the coin has to sides and if it’s fair, there should be a 50% chance of getting tails). The researcher observes that the number of tails they got is no different from chance - and so they found a support for their original hypothesis. They make the full data table from the study openly available together with the information about the methods and analysis they conducted.
 
-::: solution
-:::
+Another researcher downloads the data table and re-runs the exact same analysis in a different software using R programming language. They also observe that the number of tails is no different from chance. **They have reproduced the study!**
 
+A third researcher reads about the reproduced study and decides to conduct a new data analysis on a different coin. They apply the exact same methods (i.e. they toss a coin 100 times and register the outcome every time the coin falls on the floor). Just as in the original study, they mark heads as 0 and tails as 1. They also run a Student t-test on the data and they observe that the number is tails is no different from chance. **They have replicated the study!** 
+
+Note, however, that in many different disciplines the word “reproduced” could be used in both the second and the third researcher case, that is to mean both reproducing and replicating the study.
+
+
+::: discussion
+
+Could you come up with more examples of reproducible studies in different disciplines or different types of research? What would it take for these studies to be reproduced? 
 
 :::
 
@@ -74,15 +91,9 @@ It is defined as “obtaining consistent computational results using the same in
 Here we mean arriving at a similar (consistent) interpretation by following the same analysis process. This could be obtained by following the step-by-step reasoning and interpretation process of the researcher(s).
 
 
-::: challenge
+::: discussion
 
-## Exercise
-
-XX
-
-::: solution
-:::
-
+Discuss in pairs: Should we use the term “reproducibility” across different disciplines and research methodologies even though it might mean different things?
 
 :::
 
@@ -116,20 +127,20 @@ However, not everyone agrees.
 - Lack of quality checking procedures
 - Insufficient peer review
 
-::: challenge
+::: discussion
 
-## Exercise
-
-XX
-
-::: solution
-:::
-
+Do you agree that there is a reproducibility crisis in academic research?\
+How many studies would have to reproduce successfully for the “crisis” to be over?\
+What could librarians do to help researchers fight the “reproducibility crisis”?\
 
 :::
+
 
 ::: keypoints
 
-XX
+- Reproducibility usually means obtaining the same results with the same data.
+- Across different disciplines and methodologies, the understanding of what reproducibility means can be very different.
+- Reproducible research is not the same as open research - it is important to share research outputs to be able to reproduce others’ studies, but research can be made fully reproducible even if it cannot be made fully open. 
+- Recent studies point to many issues with reproducibility across different disciplines, something that has been termed “reproducibility crisis”
 
 :::
