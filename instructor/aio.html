@@ -212,6 +212,30 @@
 </div>
 <!--/div.accordion-flush-->
 
+<div class="accordion accordion-flush" id="accordionFlush5">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading5">
+        <a href="episode-3.html">4. Tools for Reproducible Research Workflows</a>
+    </div>
+<!--/div.accordion-header-->
+        
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush6">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading6">
+        <a href="episode-4.html">5. The Role of Libraries in Supporting Reproducibility</a>
+    </div>
+<!--/div.accordion-header-->
+        
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
                 </div>
               </div>
             </div>
@@ -566,7 +590,260 @@ some of the challenges</li>
 </div>
 </div>
 </div>
-</div></section>
+</div></section><section id="aio-episode-3"><p>Content from <a href="episode-3.html">Tools for Reproducible Research Workflows</a></p>
+<hr>
+<p> Last updated on 2023-11-01 | 
+        
+        <a href="https://github.com/ucla-imls-open-sci/reproducible-workflows/edit/main/episodes/episode-3.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 12 minutes </p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>What are reproducible research workflows?</li>
+<li>Which areas of the research process can be made more
+reproducible?</li>
+<li>What tools can improve reproducibility of research workflows?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>provide examples of reproducible research workflows</li>
+<li>list at least 4 different tools and practices for increasing
+research reproducibility</li>
+<li>demonstrate basic understanding of how to use selected tools for
+increasing research reproducibility</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section id="starting-with-reproducible-research-workflows"><h2 class="section-heading">Starting with Reproducible Research Workflows<a class="anchor" aria-label="anchor" href="#starting-with-reproducible-research-workflows"></a>
+</h2>
+<hr class="half-width">
+<p>When we talk about research workflows we mean the sequence of
+processes through which researchers have to go to get to specific
+research outputs such as a dataset, analysis result or a publication. We
+can distinguish three main areas in the research process where workflows
+can be made more reproducible:</p>
+<ol style="list-style-type: decimal">
+<li>Data acquisition and processing</li>
+<li>Data analyses</li>
+<li>Data reports (manuscripts)</li>
+</ol>
+<figure><img src="../fig/image2.png" class="figure mx-auto d-block"></figure></section><section id="what-tools-are-available-out-there"><h2 class="section-heading">What tools are available out there?<a class="anchor" aria-label="anchor" href="#what-tools-are-available-out-there"></a>
+</h2>
+<hr class="half-width">
+<p>Different tools can be used for increasing reproducibility depending
+on the specific phase of research process. Here is a list of some
+helpful tools for each of the three phases:</p>
+<p><strong>Data acquisition and processing</strong></p>
+<p>Documentation is one of the most important</p>
+<p>Tools for documenting data acquisition and processing:</p>
+<ul>
+<li>README files (Templates, e.g. <a href="https://data.research.cornell.edu/content/readme" class="external-link">https://data.research.cornell.edu/content/readme</a>,
+<a href="https://drive.google.com/file/d/1RHl-D79tZWC3nJJPrnvcgIQDHgmuH2Mk/view" class="external-link">Dataverse
+example</a>)</li>
+<li>Codebooks (Examples)</li>
+<li>Electronic Lab Notebooks (in-lab context)</li>
+</ul>
+<p><strong>Data analyses</strong></p>
+<p>In the data analysis phase of the research process, the tools for
+making analyses more reproducible will differ depending on the
+methodology used, for example depending on whether researcher applies
+quantitative or qualitative methods in the study. Here is a list of some
+helpful tools depending on research methodology:</p>
+<p>Quantitative methods:</p>
+<ul>
+<li>Programming languages for track-record and transparency of all
+steps: R, Python, Syntax from SPSS</li>
+<li>Versioning: Git</li>
+<li>Code quality checking and testing: <a href="https://the-turing-way.netlify.app/reproducible-research/code-quality.html" class="external-link">https://the-turing-way.netlify.app/reproducible-research/code-quality.html</a>
+</li>
+<li>Containers for freezing computational environment: <a href="https://the-turing-way.netlify.app/reproducible-research/renv/renv-options.html" class="external-link">https://the-turing-way.netlify.app/reproducible-research/renv/renv-options.html</a>
+</li>
+<li>Code capsules: <a href="https://codeocean.com" class="external-link">https://codeocean.com</a>
+</li>
+</ul>
+<p>Qualitative methods:</p>
+<ul>
+<li>Annotations (e.g. <a href="https://help-nv11.qsrinternational.com/desktop/concepts/about_annotations.html" class="external-link">annotation
+function in NVIVO</a>, ATI: <a href="https://qdr.syr.edu/ati" class="external-link">Annotation
+for Transparent Inquiry</a>)</li>
+<li>Active citation: <a href="https://www.princeton.edu/~amoravcs/library/ps.pdf" class="external-link">https://www.princeton.edu/~amoravcs/library/ps.pdf</a>
+</li>
+</ul>
+<p><strong>Data reports (manuscripts)</strong></p>
+<ul>
+<li>R Markdown (fully reproducible manuscripts)</li>
+<li>Quarto (fully reproducible manuscripts)</li>
+<li>HackMD</li>
+<li>Overleaf</li>
+<li>Jupyter Notebooks</li>
+</ul>
+<div id="exercise" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<div id="exercise" class="callout-inner">
+<h3 class="callout-title">Exercise<a class="anchor" aria-label="anchor" href="#exercise"></a>
+</h3>
+<div class="callout-content">
+<ol style="list-style-type: decimal">
+<li>Take a look at the README file template that we listed in this
+lesson: <a href="https://data.research.cornell.edu/data-management/sharing/readme/" class="external-link uri">https://data.research.cornell.edu/data-management/sharing/readme/</a>
+How could you help a researcher fill out a template like that? Which
+elements could you help most with?</li>
+<li>What types of tools can be used for making qualitative analyses more
+reproducible? If you or a researcher don’t have access to these specific
+tools, could you think of other ways in which one could make qualitative
+analysis more reproducible using commonly available tools?</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Keypoints<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
+</h3>
+<div class="callout-content">
+<ul>
+<li>Research workflows are sequences of processes that researchers have
+to go through to get to specific research outputs</li>
+<li>Data acquisition, data analysis and manuscript writing are three
+phases of the research process that can be made more reproducible</li>
+<li>There are many tools out there that can help make research workflows
+more reproducible</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- 
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use. 
+ -->
+</section></section><section id="aio-episode-4"><p>Content from <a href="episode-4.html">The Role of Libraries in Supporting Reproducibility</a></p>
+<hr>
+<p> Last updated on 2023-11-01 | 
+        
+        <a href="https://github.com/ucla-imls-open-sci/reproducible-workflows/edit/main/episodes/episode-4.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 12 minutes </p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>What is the role of libraries in research improvement?</li>
+<li>How can library staff support researchers in improving
+reproducibility?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>demonstrate understanding of libraries’ central role in supporting
+reproducibility</li>
+<li>provide examples of how libraries can support research
+reproducibility and its improvement</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section id="why-libraries"><h2 class="section-heading">Why Libraries?<a class="anchor" aria-label="anchor" href="#why-libraries"></a>
+</h2>
+<hr class="half-width">
+<p>Academic libraries are uniquely positioned to provide support in the
+area of reproducible research. Open science is already at the core of
+many libraries’ work and many librarians provide direct and increasingly
+hands-on support to both early career and senior researchers at their
+institutions. Because reproducibility is strongly associated with open
+science/open research and because funders, journals, and other
+stakeholders begin to implement new requirements for not only open but
+also reproducible research, librarians can build on their expertise in
+helping preparing research outputs for sharing to also help make them
+reproducible.</p>
+</section><section id="reproducibility-support-from-the-libraries"><h2 class="section-heading">Reproducibility support from the libraries<a class="anchor" aria-label="anchor" href="#reproducibility-support-from-the-libraries"></a>
+</h2>
+<hr class="half-width">
+<p><strong>Where can libraries help:</strong></p>
+<ul>
+<li>Awareness raising, teaching, training, and hands-on guidance</li>
+<li>Help researchers being transparent about their full research
+workflow: research questions, methods, data, step-by-step procedures and
+analyses; help making the methods, data and analyses open (if possible
+in a given project)</li>
+<li>Assist with making good documentation for all outputs and all stages
+of the research process</li>
+<li>Assist with version control to track of versions of all outputs</li>
+<li>Help with the quality check of the methods, data and analyses</li>
+<li>Verifying researchers’ work: helping with reproducing their own
+results</li>
+</ul>
+<div id="exercise-reflection" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<div id="exercise-reflection" class="callout-inner">
+<h3 class="callout-title">Exercise (Reflection)<a class="anchor" aria-label="anchor" href="#exercise-reflection"></a>
+</h3>
+<div class="callout-content">
+<p>What do you think is the most important area where libraries can
+provide support in making research more reproducible?</p>
+</div>
+</div>
+</div>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Keypoints<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
+</h3>
+<div class="callout-content">
+<ul>
+<li>Academic libraries are uniquely positioned to provide help and
+support in the area of open and reproducible research</li>
+<li>Academic librarians can build on their expertise in making research
+outputs shareable and reusable to also help make them reproducible</li>
+<li>Academic libraries can offer training in reproducible research
+workflows in addition to open science trainings</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- 
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use. 
+ -->
+</section></section>
 </div>
     </main>
 </div>
@@ -615,8 +892,8 @@ some of the challenges</li>
   "url": "https://ucla-imls-open-sci.github.io/reproducible-workflows/instructor/aio.html",
   "identifier": "https://ucla-imls-open-sci.github.io/reproducible-workflows/instructor/aio.html",
   "dateCreated": "2023-08-16",
-  "dateModified": "2023-10-31",
-  "datePublished": "2023-10-31"
+  "dateModified": "2023-11-01",
+  "datePublished": "2023-11-01"
 }
 
   </script><script>
