@@ -85,11 +85,11 @@
   Reproducible Research Workflows
 </div>
 
-<aside class="col-md-12 lesson-progress"><div style="width: 20%" class="percentage">
-    20%
+<aside class="col-md-12 lesson-progress"><div style="width: 19%" class="percentage">
+    19%
   </div>
   <div class="progress incubator">
-    <div class="progress-bar incubator" role="progressbar" style="width: 20%" aria-valuenow="20" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar incubator" role="progressbar" style="width: 19%" aria-valuenow="19" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
 </aside><div class="container">
@@ -261,13 +261,13 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>What is Reproducible Research?</h1>
-        <p> Last updated on 2023-10-27 | 
+        <p> Last updated on 2023-11-01 | 
         
         <a href="https://github.com/ucla-imls-open-sci/reproducible-workflows/edit/main/episodes/episode-1.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
         
         
-        <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 12 minutes </p>
+        <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 11 minutes </p>
         
         <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
@@ -318,16 +318,22 @@ obtained its own data</p>
 <p>Research results are <strong>generalized</strong> when results apply
 in other contexts or populations that differ from the original one</p>
 <p><a href="https://www.nap.edu/catalog/25303" class="external-link">Source</a></p>
-<figure><img src="../fig/epi1.png" alt="" class="figure mx-auto d-block"><figcaption>Based on: <a href="https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html" class="external-link">https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html</a></figcaption></figure><div id="exercise" class="callout challenge">
+<figure><img src="../fig/epi1.png" alt="" class="figure mx-auto d-block"><figcaption>Based on: <a href="https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html" class="external-link">https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html</a></figcaption></figure><div id="based-on-what-we-went-through-we-can-say-that-a-study-has-been-reproduced-when" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
-<div id="exercise" class="callout-inner">
-<h3 class="callout-title">Exercise<a class="anchor" aria-label="anchor" href="#exercise"></a>
+<div id="based-on-what-we-went-through-we-can-say-that-a-study-has-been-reproduced-when" class="callout-inner">
+<h3 class="callout-title">Based on what we went through, we can say that
+a study has been reproduced when:<a class="anchor" aria-label="anchor" href="#based-on-what-we-went-through-we-can-say-that-a-study-has-been-reproduced-when"></a>
 </h3>
 <div class="callout-content">
-<p>XX</p>
-</div>
+<ol style="list-style-type: decimal"><li>Researchers apply similar methods to the original study in a new
+study</li>
+<li>Researchers re-analyze data from the original study and observe the
+same results</li>
+<li>Researchers reuse data from the original study for a new
+purpose</li>
+</ol></div>
 </div>
 </div>
 <div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
@@ -337,38 +343,61 @@ in other contexts or populations that differ from the original one</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
-
-</div>
+<ol start="2" style="list-style-type: decimal"><li>Researchers re-analyze data from the original study and observe the
+same results</li>
+</ol></div>
 </div>
 </div>
 </div>
 </section><section id="reproducibility-some-examples"><h2 class="section-heading">Reproducibility: Some Examples<a class="anchor" aria-label="anchor" href="#reproducibility-some-examples"></a>
 </h2>
-<hr class="half-width"><div id="exercise-1" class="callout challenge">
+<hr class="half-width"><p>Let’s consider an example: a researcher is tossing a coin 100 times
+to check if the coin is fair. They register if they have observed heads
+or tails after each toss when the coin falls on the floor. Heads are
+registered as 0 and tails as 1. The sample size of this study is N = 100
+(since they are tossing the coin 100 times).</p>
+<p>Hypothesis: The coin is fair (i.e. not biased)<br>
+Sample size: N = 100<br>
+Heads = 0<br>
+Tails = 1<br>
+Analysis method = Student t-test<br></p>
+<p>After all data is collected (i.e. the researcher is done with the
+tossing) they start data analysis. They run a simple statistical test in
+the SPSS program - a Student t-test - to compare the number of observed
+tails outcomes against the chance level (which is 0.5 since the coin has
+to sides and if it’s fair, there should be a 50% chance of getting
+tails). The researcher observes that the number of tails they got is no
+different from chance - and so they found a support for their original
+hypothesis. They make the full data table from the study openly
+available together with the information about the methods and analysis
+they conducted.</p>
+<p>Another researcher downloads the data table and re-runs the exact
+same analysis in a different software using R programming language. They
+also observe that the number of tails is no different from chance.
+<strong>They have reproduced the study!</strong></p>
+<p>A third researcher reads about the reproduced study and decides to
+conduct a new data analysis on a different coin. They apply the exact
+same methods (i.e. they toss a coin 100 times and register the outcome
+every time the coin falls on the floor). Just as in the original study,
+they mark heads as 0 and tails as 1. They also run a Student t-test on
+the data and they observe that the number is tails is no different from
+chance. <strong>They have replicated the study!</strong></p>
+<p>Note, however, that in many different disciplines the word
+“reproduced” could be used in both the second and the third researcher
+case, that is to mean both reproducing and replicating the study.</p>
+<div id="discussion1" class="callout discussion">
 <div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
+<i class="callout-icon" data-feather="message-circle"></i>
 </div>
-<div id="exercise-1" class="callout-inner">
-<h3 class="callout-title">Exercise<a class="anchor" aria-label="anchor" href="#exercise-1"></a>
+<div class="callout-inner">
+<h3 class="callout-title">Discussion<a class="anchor" aria-label="anchor" href="#discussion1"></a>
 </h3>
 <div class="callout-content">
-<p>XX</p>
-</div>
-</div>
-</div>
-<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
-  <h4 class="accordion-header" id="headingSolution2">
-  Show me the solution
-  </h4>
-</button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
-<div class="accordion-body">
-
-</div>
+<p>Could you come up with more examples of reproducible studies in
+different disciplines or different types of research? What would it take
+for these studies to be reproduced?</p>
 </div>
 </div>
 </div>
@@ -386,29 +415,17 @@ data.</p>
 following the same analysis process. This could be obtained by following
 the step-by-step reasoning and interpretation process of the
 researcher(s).</p>
-<div id="exercise-2" class="callout challenge">
+<div id="discussion2" class="callout discussion">
 <div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
+<i class="callout-icon" data-feather="message-circle"></i>
 </div>
-<div id="exercise-2" class="callout-inner">
-<h3 class="callout-title">Exercise<a class="anchor" aria-label="anchor" href="#exercise-2"></a>
+<div class="callout-inner">
+<h3 class="callout-title">Discussion<a class="anchor" aria-label="anchor" href="#discussion2"></a>
 </h3>
 <div class="callout-content">
-<p>XX</p>
-</div>
-</div>
-</div>
-<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
-  <h4 class="accordion-header" id="headingSolution3">
-  Show me the solution
-  </h4>
-</button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
-<div class="accordion-body">
-
-</div>
+<p>Discuss in pairs: Should we use the term “reproducibility” across
+different disciplines and research methodologies even though it might
+mean different things?</p>
 </div>
 </div>
 </div>
@@ -449,29 +466,20 @@ crisis”</a>. However, not everyone agrees.</p>
 <li>Errors in reporting numbers</li>
 <li>Lack of quality checking procedures</li>
 <li>Insufficient peer review</li>
-</ul><div id="exercise-3" class="callout challenge">
+</ul><div id="discussion3" class="callout discussion">
 <div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
+<i class="callout-icon" data-feather="message-circle"></i>
 </div>
-<div id="exercise-3" class="callout-inner">
-<h3 class="callout-title">Exercise<a class="anchor" aria-label="anchor" href="#exercise-3"></a>
+<div class="callout-inner">
+<h3 class="callout-title">Discussion<a class="anchor" aria-label="anchor" href="#discussion3"></a>
 </h3>
 <div class="callout-content">
-<p>XX</p>
-</div>
-</div>
-</div>
-<div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
-  <h4 class="accordion-header" id="headingSolution4">
-  Show me the solution
-  </h4>
-</button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
-<div class="accordion-body">
-
-</div>
+<p>Do you agree that there is a reproducibility crisis in academic
+research?<br>
+How many studies would have to reproduce successfully for the “crisis”
+to be over?<br>
+What could librarians do to help researchers fight the “reproducibility
+crisis”?<br></p>
 </div>
 </div>
 </div>
@@ -483,8 +491,18 @@ crisis”</a>. However, not everyone agrees.</p>
 <h3 class="callout-title">Keypoints<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
 </h3>
 <div class="callout-content">
-<p>XX</p>
-</div>
+<ul><li>Reproducibility usually means obtaining the same results with the
+same data.</li>
+<li>Across different disciplines and methodologies, the understanding of
+what reproducibility means can be very different.</li>
+<li>Reproducible research is not the same as open research - it is
+important to share research outputs to be able to reproduce others’
+studies, but research can be made fully reproducible even if it cannot
+be made fully open.</li>
+<li>Recent studies point to many issues with reproducibility across
+different disciplines, something that has been termed “reproducibility
+crisis”</li>
+</ul></div>
 </div>
 </div>
 <!-- 
@@ -550,7 +568,7 @@ any links that you are not going to use.
   "url": "https://ucla-imls-open-sci.github.io/reproducible-workflows/instructor/episode-1.html",
   "identifier": "https://ucla-imls-open-sci.github.io/reproducible-workflows/instructor/episode-1.html",
   "dateCreated": "2023-08-16",
-  "dateModified": "2023-10-27",
+  "dateModified": "2023-11-01",
   "datePublished": "2023-11-01"
 }
 
