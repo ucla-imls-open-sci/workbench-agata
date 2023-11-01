@@ -30,7 +30,7 @@ When we talk about research workflows we mean the sequence of processes through 
 1. Data analyses
 1. Data reports (manuscripts)
 
-![](/fig/image2.png)
+![](fig/image2.png)
 
 ## What tools are available out there?
 
