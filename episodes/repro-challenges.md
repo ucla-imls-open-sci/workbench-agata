@@ -24,13 +24,12 @@ teaching: 10
 
 ## Reproducibility benefits for science
 
-Reproducible research is often discussed in the context of research improvement, because making studies more reproducible means that:
+Reproducible research is pivotal for research improvement because it ensures that studies are:
 
-1. They are easier to **verify** (and catch errors and mistakes!)
-1. They are more likely to be **correct** (also because there is higher chance of catching any issues)
-1. They are more **understandable** for others and **reusable** (since making a study reproducible entails proper organization and documentation of research process)
-1. They are better prepared to **share** and make **open** (if no privacy or copyright restrictions apply)
-
+1. Easier to **verify**, helping to catch errors and mistakes.
+2. More likely to be **correct**, as it increases the likelihood of catching issues.
+3. More **understandable** and **reusable**, due to the proper organization and thorough documentation of the research process.
+4. Better prepared to **share** and make **open**, when privacy or copyright restrictions do not apply.
 
 ## Reproducibility benefits for researchers
 But reproducibility also has particular benefits for researchers themselves, and not only for science more broadly. That’s because making studies more reproducible means that researchers:
