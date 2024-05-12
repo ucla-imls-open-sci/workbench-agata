@@ -337,7 +337,6 @@ any links that you are not going to use.
 <p>Last updated on 2024-05-12 |
         
         <a href="https://github.com/ucla-imls-open-sci/reproducible-workflows/edit/main/episodes/reproducible-research-overview.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 11 minutes</p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -376,10 +375,10 @@ differently</li>
 <section id="reproducibility-some-definitions"><h2 class="section-heading">Reproducibility: Some Definitions<a class="anchor" aria-label="anchor" href="#reproducibility-some-definitions"></a>
 </h2>
 <hr class="half-width">
-<p><strong>Reproducibility</strong> means obtaining the same results
-with the same data</p>
-<p><strong>Replicability</strong> means obtaining similar results with
-new data</p>
+<p><strong>Reproducibility</strong>: Obtaining the same results using
+the same data.</p>
+<p><strong>Replicability</strong>: Achieving similar results with new
+data.</p>
 <p>Research is <strong>reproduced</strong> when results are consistent
 when following the same method and analysis steps with the same input
 data</p>
@@ -434,21 +433,20 @@ to check if the coin is fair. They register if they have observed heads
 or tails after each toss when the coin falls on the floor. Heads are
 registered as 0 and tails as 1. The sample size of this study is N = 100
 (since they are tossing the coin 100 times).</p>
-<p>Hypothesis: The coin is fair (i.e. not biased)<br>
-Sample size: N = 100<br>
-Heads = 0<br>
-Tails = 1<br>
-Analysis method = Student t-test<br></p>
+<pre><code>Hypothesis: The coin is fair (i.e. not biased)\
+Sample size: N = 100\
+Heads = 0\
+Tails = 1\
+Analysis method = Student t-test\</code></pre>
 <p>After all data is collected (i.e. the researcher is done with the
 tossing) they start data analysis. They run a simple statistical test in
 the SPSS program - a Student t-test - to compare the number of observed
 tails outcomes against the chance level (which is 0.5 since the coin has
-to sides and if it’s fair, there should be a 50% chance of getting
+two sides, and if it’s fair, there should be a 50% chance of getting
 tails). The researcher observes that the number of tails they got is no
 different from chance - and so they found a support for their original
-hypothesis. They make the full data table from the study openly
-available together with the information about the methods and analysis
-they conducted.</p>
+hypothesis. The researcher makes the complete data table and detailed
+methods and analysis from the study available to the public.</p>
 <p>Another researcher downloads the data table and re-runs the exact
 same analysis in a different software using R programming language. They
 also observe that the number of tails is no different from chance.
@@ -471,9 +469,8 @@ case, that is to mean both reproducing and replicating the study.</p>
 <h3 class="callout-title">Discussion<a class="anchor" aria-label="anchor" href="#discussion1"></a>
 </h3>
 <div class="callout-content">
-<p>Could you come up with more examples of reproducible studies in
-different disciplines or different types of research? What would it take
-for these studies to be reproduced?</p>
+<p>Can you provide additional examples of reproducible studies from
+various disciplines or research types?</p>
 </div>
 </div>
 </div>
@@ -509,10 +506,11 @@ mean different things?</p>
 </section><section id="reproducibility-and-open-research"><h2 class="section-heading">Reproducibility and Open Research<a class="anchor" aria-label="anchor" href="#reproducibility-and-open-research"></a>
 </h2>
 <hr class="half-width">
-<p><strong>Reproducibility is strongly associated with transparency.
-</strong> In order to reproduce others’ studies we need to have access
-to the methods, data, and analyses that have been conducted. So making
-data, tools and analyses available is essential for reproducibility.</p>
+<p><strong>Reproducibility is closely associated with
+transparency.</strong> In order to reproduce others’ studies we need to
+have access to the methods, data, and analyses that have been conducted.
+So making data, tools and analyses available is essential for
+reproducibility.</p>
 <p><strong>Reproducible does not (have to) mean fully open.</strong>
 However, a reproducible project does not have to be fully open. For
 example, due to privacy or copyright restrictions on methods, data, or
