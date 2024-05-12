@@ -1,7 +1,7 @@
 ---
 title: 'What is Reproducible Research?'
-teaching: 10
-exercises: 1
+teaching: 20
+exercises: 
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
@@ -24,9 +24,9 @@ exercises: 1
 
 ## Reproducibility: Some Definitions
 
-**Reproducibility** means obtaining the same results with the same data
+**Reproducibility**: Obtaining the same results using the same data.
 
-**Replicability** means obtaining similar results with new data
+**Replicability**: Achieving similar results with new data.
 
 Research is **reproduced** when results are consistent when following the same method and analysis steps with the same input data
 
@@ -59,13 +59,15 @@ Research results are **generalized** when results apply in other contexts or pop
 
 Let’s consider an example: a researcher is tossing a coin 100 times to check if the coin is fair. They register if they have observed heads or tails after each toss when the coin falls on the floor. Heads are registered as 0 and tails as 1. The sample size of this study is N = 100 (since they are tossing the coin 100 times). 
 
+```
 Hypothesis: The coin is fair (i.e. not biased)\
 Sample size: N = 100\
 Heads = 0\
 Tails = 1\
 Analysis method = Student t-test\
+```
 
-After all data is collected (i.e. the researcher is done with the tossing) they start data analysis. They run a simple statistical test in the SPSS program - a Student t-test - to compare the number of observed tails outcomes against the chance level (which is 0.5 since the coin has to sides and if it’s fair, there should be a 50% chance of getting tails). The researcher observes that the number of tails they got is no different from chance - and so they found a support for their original hypothesis. They make the full data table from the study openly available together with the information about the methods and analysis they conducted.
+After all data is collected (i.e. the researcher is done with the tossing) they start data analysis. They run a simple statistical test in the SPSS program - a Student t-test - to compare the number of observed tails outcomes against the chance level (which is 0.5 since the coin has two sides, and if it's fair, there should be a 50% chance of getting tails). The researcher observes that the number of tails they got is no different from chance - and so they found a support for their original hypothesis. The researcher makes the complete data table and detailed methods and analysis from the study available to the public.
 
 Another researcher downloads the data table and re-runs the exact same analysis in a different software using R programming language. They also observe that the number of tails is no different from chance. **They have reproduced the study!**
 
@@ -76,7 +78,7 @@ Note, however, that in many different disciplines the word “reproduced” coul
 
 ::: discussion
 
-Could you come up with more examples of reproducible studies in different disciplines or different types of research? What would it take for these studies to be reproduced? 
+Can you provide additional examples of reproducible studies from various disciplines or research types?
 
 :::
 
@@ -98,7 +100,8 @@ Discuss in pairs: Should we use the term “reproducibility” across different 
 :::
 
 ## Reproducibility and Open Research
-**Reproducibility is strongly associated with transparency. **
+
+**Reproducibility is closely associated with transparency.**
 In order to reproduce others’ studies we need to have access to the methods, data, and analyses that have been conducted. So making data, tools and analyses available is essential for reproducibility. 
 
 **Reproducible does not (have to) mean fully open.**
