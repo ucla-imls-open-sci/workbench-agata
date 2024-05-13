@@ -26,7 +26,7 @@ Academic libraries are uniquely positioned to provide support in the area of rep
 
 ## Reproducibility support from the libraries
 
-**Where can libraries help:**
+### Where can libraries help:
 
 - Awareness raising, teaching, training, and hands-on guidance
 - Help researchers being transparent about their full research workflow: research questions, methods, data, step-by-step procedures and analyses; help making the methods, data and analyses open (if possible in a given project)
