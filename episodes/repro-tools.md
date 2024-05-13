@@ -38,7 +38,7 @@ When we talk about research workflows we mean the sequence of processes through 
 
 Different tools can be used for increasing reproducibility depending on the specific phase of research process. Here is a list of some helpful tools for each of the three phases:
 
-**Data acquisition and processing**
+### Data acquisition and processing
 
 Documentation is one of the most important 
 
@@ -49,7 +49,7 @@ Tools for documenting data acquisition and processing:
 - Codebooks (Examples)
 - Electronic Lab Notebooks (in-lab context)
 
-**Data analyses**
+### Data analyses
 
 In the data analysis phase of the research process, the tools for making analyses more reproducible will differ depending on the methodology used, for example depending on whether researcher applies quantitative or qualitative methods in the study. Here is a list of some helpful tools depending on research methodology:
 
@@ -66,7 +66,7 @@ Qualitative methods:
 - Annotations (e.g. [annotation function in NVIVO](https://help-nv11.qsrinternational.com/desktop/concepts/about_annotations.html), ATI: [Annotation for Transparent Inquiry](https://qdr.syr.edu/ati))
 - Active citation: [https://www.princeton.edu/~amoravcs/library/ps.pdf](https://www.princeton.edu/~amoravcs/library/ps.pdf)
 
-**Data reports (manuscripts)**
+### Data reports (manuscripts)
 
 - R Markdown (fully reproducible manuscripts)
 - Quarto (fully reproducible manuscripts)
