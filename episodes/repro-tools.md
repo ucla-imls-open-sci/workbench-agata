@@ -68,11 +68,13 @@ Qualitative methods:
 
 ### Data reports (manuscripts)
 
-- R Markdown (fully reproducible manuscripts)
-- Quarto (fully reproducible manuscripts)
-- HackMD
-- Overleaf
-- Jupyter Notebooks
+Tools to create, share, and collaborate on data reports.
+
+- **R Markdown**: Create reproducible reports by embedding code and outputs into narrative documents. Ideal for integrating R workflows.  
+- **Quarto**: A next-generation tool similar to R Markdown but with expanded support for multiple languages (e.g., Python, Julia, R).  
+- **Jupyter Notebooks**: Interactive documents combining live code, outputs, and text, popular for Python workflows.  
+- **HackMD**: A collaborative markdown editor for real-time co-authoring, not inherently reproducible but useful for team writing.  
+- **Overleaf**: A LaTeX-based platform for professional typesetting, useful for collaboration but not designed for reproducibility.
 
 ::: challenge
 
