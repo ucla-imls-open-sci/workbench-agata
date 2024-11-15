@@ -42,7 +42,7 @@ Different tools can be used for increasing reproducibility depending on the spec
 
 Documentation is a critical step in ensuring data acquisition and processing are transparent and reproducible. Key tools include:
 
-- **README files**: Provide essential metadata about datasets or code repositories, such as purpose, data collection methods, and file organization. A [templates](https://data.research.cornell.edu/content/readme) is available to guide their creation.  
+- **README files**: Provide essential metadata about datasets or code repositories, such as purpose, data collection methods, and file organization. A [template](https://data.research.cornell.edu/content/readme) is available to guide their creation.  
 - **Codebooks**: Define dataset variables, labels, values, and units to make data understandable and reusable.  
 - **Electronic Lab Notebooks (ELNs)**: Digital tools to document lab workflows, experiments, and results with features like timestamps and collaboration (e.g., Jupyter, LabArchives).
 
