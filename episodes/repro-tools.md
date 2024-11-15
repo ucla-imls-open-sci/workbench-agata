@@ -38,16 +38,13 @@ When we talk about research workflows we mean the sequence of processes through 
 
 Different tools can be used for increasing reproducibility depending on the specific phase of research process. Here is a list of some helpful tools for each of the three phases:
 
-### Data acquisition and processing
+### Data Acquisition and Processing
 
-Documentation is one of the most important 
+Documentation is a critical step in ensuring data acquisition and processing are transparent and reproducible. Key tools include:
 
-Tools for documenting data acquisition and processing:
-
-- README files (Templates, e.g. [https://data.research.cornell.edu/content/readme](https://data.research.cornell.edu/content/readme),
-[Dataverse example](https://drive.google.com/file/d/1RHl-D79tZWC3nJJPrnvcgIQDHgmuH2Mk/view))
-- Codebooks (Examples)
-- Electronic Lab Notebooks (in-lab context)
+- **README files**: Provide essential metadata about datasets or code repositories, such as purpose, data collection methods, and file organization. A [templates](https://data.research.cornell.edu/content/readme) is available to guide their creation.  
+- **Codebooks**: Define dataset variables, labels, values, and units to make data understandable and reusable.  
+- **Electronic Lab Notebooks (ELNs)**: Digital tools to document lab workflows, experiments, and results with features like timestamps and collaboration (e.g., Jupyter, LabArchives).
 
 ### Data analyses
 
@@ -76,22 +73,21 @@ Tools to create, share, and collaborate on data reports.
 - **HackMD**: A collaborative markdown editor for real-time co-authoring, not inherently reproducible but useful for team writing.  
 - **Overleaf**: A LaTeX-based platform for professional typesetting, useful for collaboration but not designed for reproducibility.
 
-::: challenge
+:::::::: challenge
 
 ## Exercise
 
 1. Take a look at the README file template that we listed in this lesson: https://data.research.cornell.edu/data-management/sharing/readme/ How could you help a researcher fill out a template like that? Which elements could you help most with?
 2. What types of tools can be used for making qualitative analyses more reproducible? If you or a researcher don’t have access to these specific tools, could you think of other ways in which one could make qualitative analysis more reproducible using commonly available tools?
 
+:::::::::::::
 
-:::
 
-
-::: keypoints
+:::::::: keypoints
 
 - Research workflows are sequences of processes that researchers have to go through to get to specific research outputs
 - Data acquisition, data analysis and manuscript writing are three phases of the research process that can be made more reproducible
 - There are many tools out there that can help make research workflows more reproducible
 
 
-:::
+:::::::::::
